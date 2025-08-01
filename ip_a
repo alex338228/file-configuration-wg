@@ -1,0 +1,40 @@
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet 192.168.255.1/32 brd 192.168.255.1 scope global lo:1
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host noprefixroute 
+       valid_lft forever preferred_lft forever
+2: ens33: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 00:0c:29:2a:01:71 brd ff:ff:ff:ff:ff:ff
+    altname enp2s1
+    inet 10.1.10.1/24 brd 10.1.10.255 scope global ens33
+       valid_lft forever preferred_lft forever
+    inet6 fe80::20c:29ff:fe2a:171/64 scope link 
+       valid_lft forever preferred_lft forever
+3: ens34: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 00:0c:29:2a:01:7b brd ff:ff:ff:ff:ff:ff
+    altname enp2s2
+    inet 10.1.20.1/24 brd 10.1.20.255 scope global ens34
+       valid_lft forever preferred_lft forever
+    inet6 fe80::20c:29ff:fe2a:17b/64 scope link 
+       valid_lft forever preferred_lft forever
+4: ens35: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 00:0c:29:2a:01:85 brd ff:ff:ff:ff:ff:ff
+    altname enp2s3
+    inet 1.1.1.10/24 brd 1.1.1.255 scope global ens35
+       valid_lft forever preferred_lft forever
+    inet6 fe80::20c:29ff:fe2a:185/64 scope link 
+       valid_lft forever preferred_lft forever
+5: ens36: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 00:0c:29:2a:01:8f brd ff:ff:ff:ff:ff:ff
+    altname enp2s4
+    inet 192.168.157.177/24 brd 192.168.157.255 scope global dynamic ens36
+       valid_lft 1156sec preferred_lft 1156sec
+    inet6 fe80::20c:29ff:fe2a:18f/64 scope link 
+       valid_lft forever preferred_lft forever
+8: wg0: <POINTOPOINT,NOARP,UP,LOWER_UP> mtu 1420 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/none 
+    inet 10.1.30.1/24 scope global wg0
+       valid_lft forever preferred_lft forever
